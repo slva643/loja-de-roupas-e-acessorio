@@ -24,6 +24,17 @@ body {
     font-size: 50px;
 }
 
+span {
+    color: coral;
+    cursor: pointer;
+}
+
+span:hover {
+    color: blueviolet;
+}
+
+
+
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -44,7 +55,7 @@ body {
 .topnav a:hover {
     background-color: #ddd;
     color: black;
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 .row:after {
@@ -82,15 +93,7 @@ body {
 
 .compra {
    color: black;
-   background-color: #33333379;
    padding: 10px 12px;
-   border: 1px solid rgba(0, 0, 0, 0.322);
-}
-
-
-
-.compra:hover{
-   background-color: #ddd;
 }
 
 .valor{ 
@@ -99,11 +102,34 @@ body {
     font-weight: bold; 
 }
 
+footer {
+    background-color: #333;
+    height: 200px;
+}
 
-@media screen and (min-width:787) {
+
+@media screen and (min-width:200px) and (max-width: 605px) {
     .sellcard { 
         float: left;
-        width: 90%; 
+        width: 90vw; 
+        margin: 10px; 
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .topnav  {
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
+
+@media screen and (min-width:605px) and (max-width: 1272px) {
+    .sellcard { 
+        float: left;
+        width: 30%; 
         margin: 10px; 
     }
 }
