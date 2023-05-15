@@ -55,7 +55,7 @@ body {
 
 .sellcard { 
     float: left;
-    width: 22.40%; 
+    width: 23.40%; 
     margin: 10px; 
 }
 
@@ -87,6 +87,8 @@ body {
    border: 1px solid rgba(0, 0, 0, 0.322);
 }
 
+
+
 .compra:hover{
    background-color: #ddd;
 }
@@ -97,3 +99,11 @@ body {
     font-weight: bold; 
 }
 
+
+@media screen and (min-width:787) {
+    .sellcard { 
+        float: left;
+        width: 90%; 
+        margin: 10px; 
+    }
+}
